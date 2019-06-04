@@ -53,7 +53,7 @@ public class EmployeeController {
 			return ResponseEntity.ok().body("yse the details exists" );
 		return ResponseEntity.ok().body("yse the details  dont exists" );
 	}*/
-	
+	/*
 	@PutMapping("/update1/{id}/{name}")
 	public ResponseEntity<String> updates1(@PathVariable("id") int id,@PathVariable("name") String name)
 	{
@@ -78,21 +78,24 @@ public class EmployeeController {
 	}
 	return  ResponseEntity.ok().body("adhar id is not  present");
 	}
-	
+
+	*/
+	/*
 	@PutMapping("/update3")
 	public ResponseEntity<String> updates3(@RequestBody Employee emp)
 	{
 		
-	//EmployeeKeys ek=
-	//	int m
+	EmployeeKeys ek=
+		int m
 		Optional <Employee>e=repos.findById(emp);
 
-		//System.out.println("adharid of emp object------->"+emp2.getId().getAdharid());
-		//System.out.println("emp id of emp object-------->"+emp2.getId().getEmpid());
-		//Optional<Employee> emp= repos.findById(new EmployeeKeys(id));
+		System.out.println("adharid of emp object------->"+emp2.getId().getAdharid());
+		System.out.println("emp id of emp object-------->"+emp2.getId().getEmpid());
+		Optional<Employee> emp= repos.findById(new EmployeeKeys(id));
 		if(e.isPresent())
 			return ResponseEntity.ok().body("yse the details exists" );
 		return ResponseEntity.ok().body("yse the details  dont exists" );
 	}
+	*/
 	
 }

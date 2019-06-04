@@ -7,7 +7,7 @@ import javax.persistence.IdClass;
 
 import org.springframework.stereotype.Component;
 
-@IdClass(value =)
+//@IdClass(value =)
 public class EmployeeKeys implements Serializable{
 private int adharid;
 private int eid;
